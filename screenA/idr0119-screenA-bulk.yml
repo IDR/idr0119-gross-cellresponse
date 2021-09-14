@@ -1,0 +1,11 @@
+---
+target: "Screen:name:idr0119-gross-cellresponse/screenA"
+path: "idr0119-screenA-plates.tsv"
+continue: "true"
+transfer: "ln_s"
+exclude: "clientpath"
+parallel_upload: "20"
+skip: "checksum"
+columns:
+    - name
+    - path
