@@ -15,7 +15,7 @@ order = "XYCZT"
 channels = "RGP"
 rows = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-file_list = '119_files.txt'
+file_list = '2101301_files.txt'
 
 # 2101001/A1/field_1/2101001_G_A1_1_04d00h00m.tif
 pat = re.compile(r"(?P<plate_name>\w+)\/(?P<well_row>.)(?P<well_col>.)\/field_(?P<field>\d)\/[a-zA-Z0-9-]+_(?P<channel_name>\w+)_.+_.+(?P<day>\d{2})d(?P<hour>\d{2})h(?P<min>\d{2})m.tif$")
@@ -69,6 +69,17 @@ for plate_name, files in file_map.items():
         t_index = times.index(time)
         images[key].add_plane(c=c_index, z=0, t=t_index)
         images[key].add_tiff(file, c=c_index, z=0, t=t_index, planeCount=1)
+
+    exp_planes = size_c * n_times
+    tmp = {}
+    for key, image in images.items():
+        planes = image.data["Planes"]
+        tifs = image.data["TIFFs"]
+        if len(planes) != exp_planes or len(tifs) != exp_planes:
+            print(f"WARN: Removing image {key}, n_planes={len(planes)} n_tifs={len(tifs)} but exp_planes={exp_planes}")
+        else:
+            tmp[key] = image
+    images = tmp
 
     # assemble plate
     plate = Plate(plate_name, n_rows, n_cols)
