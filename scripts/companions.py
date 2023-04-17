@@ -15,10 +15,11 @@ order = "XYCZT"
 channels = "RGP"
 rows = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-file_list = '2101301_files.txt'
+file_list = '20210707-Globus_files.txt'
 
 # 2101001/A1/field_1/2101001_G_A1_1_04d00h00m.tif
 pat = re.compile(r"(?P<plate_name>\w+)\/(?P<well_row>.)(?P<well_col>.)\/field_(?P<field>\d)\/[a-zA-Z0-9-]+_(?P<channel_name>\w+)_.+_.+(?P<day>\d{2})d(?P<hour>\d{2})h(?P<min>\d{2})m.tif$")
+
 
 file_map = {}
 # This is just a list of all the tiff files
@@ -61,9 +62,9 @@ for plate_name, files in file_map.items():
         key = f"{m['well_row']}|{m['well_col']}|{m['field']}"
         if not key in images:
             images[key] = Image(key, w, h, size_z, size_c, n_times, order=order, type=pix_type)
-            images[key].add_channel(samplesPerPixel=1)
-            images[key].add_channel(samplesPerPixel=1)
-            images[key].add_channel(samplesPerPixel=1)
+            images[key].add_channel(name="channel1", samplesPerPixel=1)
+            images[key].add_channel(name="channel2", samplesPerPixel=1)
+            images[key].add_channel(name="channel3", samplesPerPixel=1)
         c_index = channels.index(m['channel_name'])
         time = int(m['day']) * 24 * 60 + int(m['hour']) * 60 + int(m['min'])
         t_index = times.index(time)
@@ -76,7 +77,7 @@ for plate_name, files in file_map.items():
         planes = image.data["Planes"]
         tifs = image.data["TIFFs"]
         if len(planes) != exp_planes or len(tifs) != exp_planes:
-            print(f"WARN: Removing image {key}, n_planes={len(planes)} n_tifs={len(tifs)} but exp_planes={exp_planes}")
+            print(f"WARN: {plate_name} - Removing image {key}, n_planes={len(planes)} n_tifs={len(tifs)} but exp_planes={exp_planes}")
         else:
             tmp[key] = image
     images = tmp
