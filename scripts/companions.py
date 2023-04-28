@@ -62,9 +62,9 @@ for plate_name, files in file_map.items():
         key = f"{m['well_row']}|{m['well_col']}|{m['field']}"
         if not key in images:
             images[key] = Image(key, w, h, size_z, size_c, n_times, order=order, type=pix_type)
-            images[key].add_channel(name="channel1", samplesPerPixel=1)
-            images[key].add_channel(name="channel2", samplesPerPixel=1)
-            images[key].add_channel(name="channel3", samplesPerPixel=1)
+            images[key].add_channel(name="R", samplesPerPixel=1)
+            images[key].add_channel(name="G", samplesPerPixel=1)
+            images[key].add_channel(name="P", samplesPerPixel=1)
         c_index = channels.index(m['channel_name'])
         time = int(m['day']) * 24 * 60 + int(m['hour']) * 60 + int(m['min'])
         t_index = times.index(time)

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Creator="ome_model 6.3.3" UUID="urn:uuid:48eb1dab-6bd0-45af-bbf4-8cb4a0442f5e" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd">
+  <Plate ID="Plate:4" Name="AU00801" Rows="4" Columns="6"/>
+</OME>
