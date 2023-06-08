@@ -109,8 +109,8 @@ columns:
         - name: Compound 2 PubChem URL
           clientname: PubChem URL
           include: true
-        - name: Compound 2 Concentration (microMolar)
-          clientname: Concentration (microMolar)
+        - name: Compound 2 Concentration (nanoMolar)
+          clientname: Concentration (nanoMolar)
           include: true
         - name: Compound 2 InChIKey
           clientname: InChIKey
