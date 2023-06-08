@@ -15,7 +15,7 @@ order = "XYCZT"
 channels = "RGP"
 rows = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-file_list = '20210707-Globus_files.txt'
+file_list = '6plates.txt'
 
 # 2101001/A1/field_1/2101001_G_A1_1_04d00h00m.tif
 pat = re.compile(r"(?P<plate_name>\w+)\/(?P<well_row>.)(?P<well_col>.)\/field_(?P<field>\d)\/[a-zA-Z0-9-]+_(?P<channel_name>\w+)_.+_.+(?P<day>\d{2})d(?P<hour>\d{2})h(?P<min>\d{2})m.tif$")

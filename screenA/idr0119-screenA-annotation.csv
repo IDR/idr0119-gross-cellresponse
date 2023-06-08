@@ -735,22 +735,6 @@ MD00801,D3,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast
 MD00801,D4,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast,UBERON,UBERON_0000310,Mammary gland,UBERON,UBERON_0001911,Palbociclib,5000,HJQCAEDIUJXGCQ-UHFFFAOYSA-N,CC1=C(C(=O)N(C2=NC(=NC=C12)Cl)C3CCCC3)Br,5330286,https://pubchem.ncbi.nlm.nih.gov/compound/5330286,,,,,,,,"P:Phase contrast, R:Nuclear reporter, G:Cell cycle reporter"
 MD00801,D5,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast,UBERON,UBERON_0000310,Mammary gland,UBERON,UBERON_0001911,Trametinib,2500,LIRYPHYGHXZJBZ-UHFFFAOYSA-N,CC(=O)Nc1cccc(c1)n1c(=O)n(C2CC2)c(=O)c2c1c(C)c(=O)n(c2Nc1ccc(cc1F)I)C,11707110,https://pubchem.ncbi.nlm.nih.gov/compound/11707110,,,,,,,,"P:Phase contrast, R:Nuclear reporter, G:Cell cycle reporter"
 MD00801,D6,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast,UBERON,UBERON_0000310,Mammary gland,UBERON,UBERON_0001911,Trametinib,5000,LIRYPHYGHXZJBZ-UHFFFAOYSA-N,CC(=O)Nc1cccc(c1)n1c(=O)n(C2CC2)c(=O)c2c1c(C)c(=O)n(c2Nc1ccc(cc1F)I)C,11707110,https://pubchem.ncbi.nlm.nih.gov/compound/11707110,,,,,,,,"P:Phase contrast, R:Nuclear reporter, G:Cell cycle reporter"
-AU00602,A1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,A2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,B1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,B2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,C1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,C2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,D1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00602,D2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,A1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,A2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,B1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,B2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,C1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,C2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,D1,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
-AU00701,D2,,,,,,,,,,,,,,,,,,,,,,,,,Blank well,
 MD00101,A5,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast,UBERON,UBERON_0000310,Mammary gland,UBERON,UBERON_0001911,,,,,,,,,,,,,Negative Control,"P:Phase contrast, R:Nuclear reporter, G:Cell cycle reporter"
 MD00101,A6,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast,UBERON,UBERON_0000310,Mammary gland,UBERON,UBERON_0001911,Gemcitabine,0.5,OKKDEIYWILRZIA-OSZBKLCCSA-N,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F,60750,https://pubchem.ncbi.nlm.nih.gov/compound/60750,,,,,,,,"P:Phase contrast, R:Nuclear reporter, G:Cell cycle reporter"
 MD00101,B5,Homo sapiens,NCBITaxon,NCBITaxon_9606,MDAMB157,EFO,EFO_0001206,Breast,UBERON,UBERON_0000310,Mammary gland,UBERON,UBERON_0001911,Gemcitabine,5,OKKDEIYWILRZIA-OSZBKLCCSA-N,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F,60750,https://pubchem.ncbi.nlm.nih.gov/compound/60750,,,,,,,,"P:Phase contrast, R:Nuclear reporter, G:Cell cycle reporter"
