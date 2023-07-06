@@ -1,0 +1,132 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.	
+																																	
+# STUDY DESCRIPTION SECTION																																	
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details		
+																																	
+Comment[IDR Study Accession]	idr0119																																
+Study Title	Analysis and modeling of cancer drug responses using cell cycle phase-specific rate effects																																
+Study Type	high content screen																															
+Study Type Term Source REF	EFO																																
+Study Type Term Accession	EFO_0007550																																
+Study Description	Identifying effective therapeutic treatment strategies is a major challenge to improving outcomes for patients with breast cancer. To gain a comprehensive understanding of how clinically relevant anti-cancer agents modulate cell cycle progression, we genetically-engineered breast cancer cell lines express a fluorescently-labelled cell cycle reporter. We then used these cell lines to track drug-induced changes in cell number and cell cycle phase, which revealed drug-specific cell cycle effects that vary across time. We developed a linear chain trick (LCT) computational model, where the cell cycle is partitioned into subphases that can faithfully capture drug-induced dynamic responses. The model correctly infers drug effects and also localizes them to specific cell cycle phases. We used our LCT model to predict the effect of unseen drug combinations and experimentally confirmed the effectiveness of predicted combination treatment strategies. Our integrated experimental and modeling approach opens avenues to assess drug responses, predict effective drug combinations, and identify optimal drug sequencing strategies.																
+Study Key Words	cell cycle	live-cell imaging	dose response	drug combinations	dynamical model	cancer																											
+Study Organism	Homo sapiens																															
+Study Organism Term Source REF	EFO																																
+Study Organism Term Accession	9606																																
+Study Screens Number	1																																
+Study External URL	
+Study BioImage Archive Accession																																
+Study Public Release Date																																
+																																	
+# Study Publication																																	
+Study PubMed ID																																	
+Study Publication Title	Analysis and modeling of cancer drug responses using cell cycle phase-specific rate effects																															
+Study Author List	Gross SM, Mohammadi F, Sanchez-Aguila C, Zhan PJ, Liby TA, Dane MA, Meyer AS, Heiser LM																														
+Study PMC ID																																	
+Study DOI																																	
+																																	
+# Study Contacts																																	
+Study Person Last Name	Heiser																																
+Study Person First Name	Laura M.																																
+Study Person Email	heiserl@ohsu.edu																																
+Study Person Address	Department of Biomedical Engineering, 2730 S. Moody Ave. CL3G, Portland, OR 97201
+																						
+Study Person ORCID	0000-0003-3330-0950																																
+Study Person Roles	corresponding author																																
+																																	
+# Study License and Data DOI																																	
+Study License	CC BY 4.0																																
+Study License URL	https://creativecommons.org/licenses/by/4.0/																																
+Study Copyright	Gross et al																																
+Study Data Publisher	University of Dundee																																
+Study Data DOI																																	
+																																	
+Term Source Name	NCBITaxon	EFO	CMPO	Fbbi																													
+Term Source File	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/																													
+																																	
+																																	
+# SCREEN SECTION																																	
+# Screen Section containing all information relative to each screen in the study including materials used, protocols names and description, phenotype names and description. 	
+																																																																
+Screen Number	1																																
+Comment[IDR Screen Name]	idr0119-gross-cellresponse/screenA
+Screen Sample Type	cell																																
+Screen Description	Time series phase and fluorescent microscopy of AU565, HCC1143, 21MT1 and MDAMB157 breast cancer cells response to single drugs and AU565 breast cancer cells response to drug combinations. Fluorescent reporters show nuclei and cell cycle state.																															
+Screen Size	Plates: 34	5D Images: 	Planes: 	Average Image Dimension (XYZCT): 	Total Tb: 																										
+Screen Example Images																														
+Screen Imaging Method	phase contrast microscopy	fluorescence microscopy																																
+Screen Imaging Method Term Source REF	FBbi	FBbi																															
+Screen Imaging Method Term Accession	FBbi_00000247	FBbi_00000246																																
+Screen Technology Type	compound screen																																
+Screen Technology Type Term Source REF	EFO																																	
+Screen Technology Type Term Accession	EFO_0007553																																	
+Screen Type	primary screen																																
+Screen Type Term Source REF	EFO																																	
+Screen Type Term Accession	EFO_0007556																																	
+Screen Organism																																	
+Screen Organism Term Source REF	NCBITaxon																																
+Screen Organism Term Accession																																	
+Screen Comments		
+
+		
+																																	
+# Library section. The library file should be supplied separately and it should contain  the reagents description including, at the absolute minimum: reagent ID, sequences and position in the layout (= plate + position in the plate)																																	
+Library File Name	idr0119-screenA-annotation																																
+Library File Format	tab-delimited text																																
+Library Type	compound library																															
+Library Type Term Source REF	EFO																																
+Library Type Term Accession	EFO_0007569																																
+Library Manufacturer																																
+Library Version																																	
+Library Experimental Conditions	
+																						
+Library Experimental Conditions Term Source REF	EFO																																
+Library Experimental Conditions Term Accession																																	
+Quality Control Description	A vehicle well in each plate is imaged and analyzed in the same fashion as the drug wells. 																																
+						
+																											
+# Protocols																																	
+Protocol Name	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol																												
+Protocol Type	growth protocol	treatment protocol	HCS library protocol	HCS image acquisition and feature extraction protocol	HCS data analysis protocol																												
+Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO																												
+Protocol Type Term Accession	EFO_0003789	EFO_0003969	EFO_0007571	EFO_0007572	EFO_0007573																												
+Protocol Description	
+
+Creation of Stable Cell Lines
+AU565 (ATCC CRL 2351) and MDAMB157 (ATCC HTB 24) cells were grown in DMEM supplemented with 10% FBS, HCC1143 (ATCC CRL 2321) cells were grown in RPMI supplemented with 10% FBS, and 21MT1 (generous gift from Kornelia Polyak) cells were grown in DMEM/F12 supplemented with 5% horse serum, 20 ng/ml rhEGF, 0.5 µg/ml hydrocortisone, 100 ng/ml cholera toxin, and 10 µg/ml insulin. The coding fragment for clover-HDHB was cloned in frame into a transposase expression plasmid modified to also express a nuclear localized mCherry and stable cell lines were created as previously described (Gross, Cell Systems 2019). In brief, the clover-HDHB-NLSmCherry expression plasmid was co-transfected 24-48 hours with the pSB100X transposase plasmid (Addgene 34879) at a ratio of 4:1 using Lipofectamine 3000 (AU565, HCC1143, 21MT1) or LTX (MDAMB157) and selected for 3-7 days with 0. 5-2 µg/ml puromycin. To ensure uniform fluorescence across the transfected population, HCC1143 and 21MT1 cells were sorted at OHSU’s Flow Cytometry Core and cells with a medium intensity clover-HDHB signal and a high intensity NLS-mCherry signal were selected for drug dose response experiments. In all cases, cells were validated by STR profiling (LabCorp) and tested negative for mycoplasma. Stable cell lines were then subjected to drug treatment using protocols described below.
+
+Drug dose response protocol
+AU565 cells were plated at a density of 25,000 cells per well into 24-well Falcon plates (Corning #353047). 24H after plating the media was exchanged with Fluorobrite media supplemented with 10% FBS, glutamine, and penicillin-streptomycin. Cells were then treated with dose-escalation: lapatinib (Selleckchem #S1028), gemcitabine (#S1149), paclitaxel (#S1150), doxorubicin (#S1208), palbociclib (#S1116), BEZ235 (#S1009), and trametinib (#S2673). After drug addition, plates were imaged every 30 minutes for 96H using phase, GFP, and RFP imaging channels with an IncuCyte S3. For single drug treatments of AU565 cells only, at 48H the media was replaced in all wells including the control wells, and fresh media and drug were added. Four equally-spaced image locations per well and three biological replicates were collected. 
+
+MDAMB157, HCC1143, and 21MT1 cell lines were transferred to and maintained in a base of either Fluorobrite media and 1x GlutaMAX or mixed Fluorobrite/F12 media and 0.5x GlutaMAX along with their corresponding supplements for no less than one week before performing the drug dose response protocol.  MDAMB157 and HCC1143 cells were plated at a density of 25,000 cells per well, while the larger 21MT1 cells were plated at a density of 5,000 cells per well into 24-well Falcon plates (Corning #353047). 24H after plating the media was exchanged with fresh Fluorobrite media as indicated per cell line. Cells were then treated with dose-escalation: BEZ235, gemcitabine, paclitaxel, doxorubicin, palbociclib, and trametinib. After drug addition, plates were imaged every 2 hours for 96H using phase, GFP, and RFP imaging channels with the IncuCyte S3. Four equally-spaced image locations per well and three biological replicates were collected. 
+																									
+																																																			
+# Phenotypes																																	
+Phenotype Name																																
+Phenotype Description																																
+Phenotype Score Type																																
+Phenotype Term Source REF	CMPO																																
+Phenotype Term Name																																	
+Phenotype Term Accession	
+																																
+																																	
+# Raw Data Files																																	
+Raw Image Data Format	Images are single-channel tiff files with one phase contrast, one green channel and one red channel image at each location and timepoint.																																
+Raw Image Organization	There is a directory for each plate which contain subdirectories for each well that have subdirectories for each field. The field subdirectories each have 193 sets of 3 files which are the phase contrast, green and red channels images taken every 30 minutes for 48 hours. 																																
+																																	
+# Feature Level Data Files																																	
+Feature Level Data File Name	AU00601_features.csv, AU00602_features.csv, AU00701_features.csv, AU00702_features.csv, AU00801_features.csv, AU00802_features.csv, AU00901_features.csv, AU00902_features.csv, AU01001_features.csv, AU01002_features.csv, AU01101_features.csv, AU01102_features.csv																															
+Feature Level Data File Description	The feature files contain cell counts for each image and the number and percent of cells classified as G1 vs S/G2.																																
+Feature Level Data File Format	csv formatted files																																
+Feature Level Data Column Name	Classify_Math_NCRATIO_Bin_1_NumObjectsPerBin	Classify_Math_NCRATIO_Bin_1_PctObjectsPerBin	Classify_Math_NCRATIO_Bin_2_NumObjectsPerBin	Classify_Math_NCRATIO_Bin_2_PctObjectsPerBin	Count_Nuclei	ImageNumber	Field	Well																																
+Feature Level Data Column Description	Number of cells in S/G2	Percent of cells in S/G2	Number of cells in G1	Percent of cells in G1	Number of cells in the image	Image index	Field index	Well in plate	 																															
+																																	
+#  Processed Data Files 																																	
+Processed Data File Name																																
+Processed Data File Format	tab-delimited text																																
+Processed Data File Description																																	
+Processed Data Column Name																																
+Processed Data Column Type																																	
+Processed Data Column Annotation Level	 																																
+Processed Data Column Description																																	
+Processed Data Column Link To Library File					
