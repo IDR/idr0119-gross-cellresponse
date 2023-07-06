@@ -1,0 +1,18 @@
+---
+channels:
+    1:
+        active: true
+        color: FF0000
+        label: Nuclear reporter
+    2:
+        active: true
+        color: 00FF00
+        label: Cell cycle reporter
+    3:
+        active: true
+        color: FFFFFF
+        label: Phase contrast
+
+greyscale: false
+t: 1
+version: 2
