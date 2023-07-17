@@ -19,11 +19,11 @@ Study BioImage Archive Accession
 Study Public Release Date	2023-07-17																															
 																																	
 # Study Publication																																	
-Study PubMed ID																																	
+Study PubMed ID	37301933																																	
 Study Publication Title	Analysis and modeling of cancer drug responses using cell cycle phase-specific rate effects																															
 Study Author List	Gross SM, Mohammadi F, Sanchez-Aguila C, Zhan PJ, Liby TA, Dane MA, Meyer AS, Heiser LM																														
-Study PMC ID																																	
-Study DOI																																	
+Study PMC ID	PMC10257663																																	
+Study DOI	https://doi.org/10.1038/s41467-023-39122-z																															
 																																	
 # Study Contacts																																	
 Study Person Last Name	Heiser																																
